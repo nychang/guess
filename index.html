@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Guess!</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="guessingGame.js"></script>
+</head>
+
+<body>
+
+	<h1>Guess<span id="exclamation-point">!</span></h1>
+
+	<div class="guess-gradient">
+		<span id="hot-red-rule">the hotter your guess, the redder this GUESS</span>
+	</div>
+
+	<h2>The <span id="number-rules">number</span>, not the jeans<a href="https://goo.gl/VYwCj1" id="question-mark">?</a></h2>
+	
+	<div>
+		<p>Guesses left:<br>
+		<span id="guess-count">5</span></p>
+		<input type="text" class="text-box" id="players-guess"></input>
+		<p>Your guesses:<br>
+		<span id="guess-list">none</span></p>
+	</div>
+	
+	<div>
+		<button type="submit" value="tell-me" class="big-button">Did I win?</button>
+	</div>
+	
+	<div>
+		<button type="button" class="circle-button" id="hint">Hint Please</button>
+		<button type="button" class="circle-button" id="restart">Start Over</button>
+	</div>
+
+</body>
+</html>

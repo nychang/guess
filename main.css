@@ -1,0 +1,137 @@
+h1 {
+	font-family: sans-serif;
+	font-size: 150px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+h2 {
+	font-family: sans-serif;
+	font-size: 60px;
+	text-align: center;
+	margin-top: 0px;
+}
+
+p {
+	font-family: sans-serif;
+	font-size: 24px;
+	text-align: center;}
+
+div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.msg-header {
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.text-box {
+	width: 30%;
+	margin: 0 30px 40px 30px;
+	font-size: 200px;
+	text-align: center;
+	font-weight: bolder;
+	cursor: url(thinking-emoji.png), auto;
+}
+
+.big-button	{
+	background: #0CAF09;
+	color: white;
+	font-size: 60px;
+	padding: 20px;
+	border-radius: 20px;
+	border-style: none;
+	margin: auto;
+	width: 50%;
+}
+.big-button:hover	{
+	background: #19E515;
+	text-transform: uppercase;
+}
+.big-button:active	{
+	background: yellow;
+}
+
+.circle-button {
+	background: #3498DB;
+	color: #EAECEE;
+	font-size: 30px;
+	padding: 10px;
+	margin: 40px;
+	width: 200px;
+	height: 200px;
+	border-radius: 200px;
+	border-style: none;
+}
+
+.circle-button:hover {
+	background: #F39C12;
+	color: #EAECEE;
+}
+
+.circle-button:active {
+	background: yellow;
+}
+
+.winning-animate {
+	position: relative;
+	animation-name: winning;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes winning {
+    0%   {color: #F781F3; left:0px; top:0px; transform: rotate(0deg);}
+    10%  {color: #F5D0A9; }
+    13%  {transform: rotate(2deg);}
+    20%  {color: #F4FA58; }
+    25%  {left:-200px; top:20px; transform: rotate(0deg);}
+    30%  {color: #82FA58; }
+    38%  {transform: rotate(-2deg); }
+    40%  {color: #00FFFF; }
+    50%  {color: #E2A9F3; left:0px; top:0px; transform: rotate(0deg);}
+    60%  {color: #00FFFF; }
+    63%  {transform: rotate(2deg);}
+    70%  {color: #82FA58; }
+    75%  {left:200px; top:20px; transform: rotate(0deg);}
+    78%  {transform: rotate(-2deg); }
+    80%  {color: #F4FA58; }
+    90%  {color: #F5D0A9; }
+    100% {color: #F781F3; left:0px; top:0px; transform: rotate(0deg);}
+}
+
+.guess-gradient {
+	display: none;
+	height: 60px;
+	background: linear-gradient(to right, black, #0B0B61, #045FB4, #00FFFF, #82FA58, yellow, #FACC2E, orange, #FF8000, red);
+
+}
+
+#number-rules {
+	color: blue;
+}
+
+#hot-red-rule {
+	font-family: sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 0px;
+}
+
+#question-mark {
+	color: red;
+	text-decoration: none;
+	font-size: 70px;
+}
+
+#exclamation-point {
+	color: red;
+	font-size: 160px;
+}
